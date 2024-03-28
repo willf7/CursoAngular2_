@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './meu-primeiro.component.html',
   styleUrl: './meu-primeiro.component.css',
 })
-export class MeuPrimeiroComponent {
-  cursos: string[];
-
-  constructor() {
-    this.cursos = ['Java', 'Angular', 'Javascript'];
-  }
-}
+export class MeuPrimeiroComponent {}
