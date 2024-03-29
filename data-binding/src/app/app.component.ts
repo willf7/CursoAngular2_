@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DataBindingComponent],
+  imports: [RouterOutlet, DataBindingComponent, TooltipModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
