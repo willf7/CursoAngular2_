@@ -13,12 +13,27 @@ export class DataBindingComponent {
   urlImage: string =
     'https://loremflickr.com/cache/resized/65535_52562876537_264c5ac9cf_400_200_nofilter.jpg';
 
+  valorAtual: string = '';
+  valorSalvo: any = '';
+
   getValor() {
     return 7;
   }
 
   getLike() {
     return true;
+  }
+
+  handleClick() {
+    alert('botao clickado');
+  }
+
+  onKeyUp(event: KeyboardEvent) {
+    this.valorAtual = (<HTMLInputElement>event.target).value;
+  }
+
+  salvarValor(valor: any) {
+    this.valorSalvo = valor;
   }
 
   constructor() {}
