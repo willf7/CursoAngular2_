@@ -9,4 +9,5 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ]
 })
-export class DataBindingModule { }
+export class DataBindingModule {
+}
